@@ -1,3 +1,8 @@
 export function foo(tasks) {
-  return `<ul>${tasks.map(task => `<li>${task}</li>`).join('')}</ul>`;
+  return `<ul class="list">${tasks
+    .map(
+      task =>
+        `<li class="item">${task} <button class= "btnDelete">delete-task</button></li>`
+    )
+    .join('')}</ul>`;
 }
