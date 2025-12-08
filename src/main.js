@@ -5,6 +5,9 @@ const formA = document.querySelector('#task');
 const wrap = document.querySelector('#app');
 formA.addEventListener('submit', handleSubmit);
 const searchInp = document.querySelector('.searchTask');
+
+// console.log(localStorage.getItem('dog'));
+searchInp.value = localStorage.getItem('dog');
 searchInp.addEventListener('input', handleSearchTask);
 
 function handleSubmit(event) {
@@ -17,13 +20,13 @@ function handleSubmit(event) {
 }
 
 function handleSearchTask(event) {
+  // console.log(searchInp.value);
   const filterTask = tasks.filter(task => task.includes(event.target.value));
   wrap.innerHTML = foo(filterTask);
 }
 
 wrap.innerHTML = foo(tasks);
 const taskList = document.querySelector('.list');
-console.log(taskList);
 taskList.addEventListener('click', handleDeleteTask);
 function handleDeleteTask(event) {
   console.log(event.target);
