@@ -86,3 +86,9 @@ body {
   background-color: rgb(233, 131, 118);
   color: rgb(226, 214, 221);
 }
+
+.imago {
+  display: block;
+  width: 400px;
+  height: 400px;
+}
