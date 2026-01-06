@@ -60,7 +60,7 @@ body {
 .list {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
 }
 .item {
   display: flex;
@@ -86,9 +86,16 @@ body {
   background-color: rgb(233, 131, 118);
   color: rgb(226, 214, 221);
 }
+.imago {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
 
 .imago {
   display: block;
   width: 400px;
-  height: 400px;
+  height: auto;
+  margin: 0 auto;
 }
